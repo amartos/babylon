@@ -1,0 +1,34 @@
+#+title: Babylon - compute the square root using Heron's method
+#+author: Alexandre Martos
+
+This simple program written in C computes the truncated square root
+of a positive non-null integer using the Babylonian algorithm, also
+called [[https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Heron's_method][Heron's method]].
+
+* Dependencies and compilation
+
+None other than any standard C library. The Makefile compiler is set
+to =gcc=, but you can modify it as you wish. To compile, simply call
+=make=. The exectuable will be placed in the =dist= directory.
+
+* Usage
+
+#+begin_src bash :eval yes :results output replace :exports results
+  ./dist/babylon -h
+#+end_src
+
+#+RESULTS:
+#+begin_example
+Usage: babylon [-hvw] N
+babylon 0.1.0 - Copyright 2023 Alexandre Martos <contact@amartos.fr>
+License GPLv3
+
+This program computes the square root of a positive non-null
+integer N using the Babylonian algorithm (Heron's method).
+
+OPTIONS
+-h print this help and exit.
+-v print the version number and exit.
+-w print the license name and exit.
+
+#+end_example
